@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,6 +8,8 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+    <audio id="bg-music" src="https://rr5---sn-npoeens7.googlevideo.com/videoplayback?expire=1743734501&ei=hfLuZ8SCC_ygi9oP3Jmi6AQ&ip=2a02%3A8071%3A885%3Ac7e0%3A807c%3Acb72%3A1afa%3A4916&id=o-AJfsDdIpy3Ti7aBgfe0YBFhRbpq6NzKlIfVVMi8YMwWK&itag=140&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&bui=AccgBcPg0sT-xJilTiVui306212aF6hAdv9e1mYMefDRRynjrrkVQHtQDaI0vVXadD2WKmv28gkX80nC&spc=_S3wKqIp6yVPnTMqrNLhQ8ZFI2KAv-P8vOFq4ZWaWCUCpDvduIv2Zh5s-hWkV_9pAt8&vprv=1&svpuc=1&mime=audio%2Fmp4&ns=pitr21nOqoq-x72uTL7u3xUQ&rqh=1&gir=yes&clen=1032595&dur=63.715&lmt=1675383476601990&keepalive=yes&fexp=24350590,24350737,24350827,24350961,24351147,24351149,24351173,24351283,24351398,24351415,24351422,24351470,24351528,24351545,51331020,51435733&c=MWEB&sefc=1&txp=6218224&n=QONGGlfz2EUYSw&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cbui%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Cns%2Crqh%2Cgir%2Cclen%2Cdur%2Clmt&sig=AJfQdSswRQIgUwbXssRTZg4IqOYS8LPydYrB6b5bwPx9QfUKHcJh7Y8CIQCfLzUBHHPUo-xd_oSMpCczFS8HZ5Mdr1YvwdVG_oagQg%3D%3D&redirect_counter=1&cm2rm=sn-h0jse7z&rrc=80&req_id=34bd5b46e4bda3ee&cms_redirect=yes&met=1743712914,&mh=7I&mip=103.25.195.69&mm=34&mn=sn-npoeens7&ms=ltu&mt=1743712500&mv=u&mvi=5&pl=24&rms=ltu,au&lsparams=met,mh,mip,mm,mn,ms,mv,mvi,pl,rms&lsig=ACuhMU0wRgIhAM3HtksP3-xcAI54Gvaf1y2Z6G_AFwRi_1ymxceUqp2SAiEA7bfoAffKxXOTejJYH26sv-bXoSLG1oruYsK37u1Ddak%3D" autoplay loop></audio></audio>
+    
     <div class="container">
         <div class="envelope-wrapper">
             <div class="envelope">
@@ -26,17 +27,16 @@
             <div class="heart"></div>
         </div>
     </div>
+    
     <script>
         const envelope = document.querySelector('.envelope-wrapper');
+        const music = document.getElementById('bg-music');
+        
         envelope.addEventListener('click', () => {
             envelope.classList.toggle('flap');
+            music.play();
         });
     </script>
-        <script>
-
-      var musik = "";
-
-    </script>
-    <script> AOS.init({ once: true, }); </script> <script> if(musik == "") { musik = "https://rr5---sn-npoeens7.googlevideo.com/videoplayback?expire=1743734501&ei=hfLuZ8SCC_ygi9oP3Jmi6AQ&ip=2a02%3A8071%3A885%3Ac7e0%3A807c%3Acb72%3A1afa%3A4916&id=o-AJfsDdIpy3Ti7aBgfe0YBFhRbpq6NzKlIfVVMi8YMwWK&itag=140&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&bui=AccgBcPg0sT-xJilTiVui306212aF6hAdv9e1mYMefDRRynjrrkVQHtQDaI0vVXadD2WKmv28gkX80nC&spc=_S3wKqIp6yVPnTMqrNLhQ8ZFI2KAv-P8vOFq4ZWaWCUCpDvduIv2Zh5s-hWkV_9pAt8&vprv=1&svpuc=1&mime=audio%2Fmp4&ns=pitr21nOqoq-x72uTL7u3xUQ&rqh=1&gir=yes&clen=1032595&dur=63.715&lmt=1675383476601990&keepalive=yes&fexp=24350590,24350737,24350827,24350961,24351147,24351149,24351173,24351283,24351398,24351415,24351422,24351470,24351528,24351545,51331020,51435733&c=MWEB&sefc=1&txp=6218224&n=QONGGlfz2EUYSw&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cbui%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Cns%2Crqh%2Cgir%2Cclen%2Cdur%2Clmt&sig=AJfQdSswRQIgUwbXssRTZg4IqOYS8LPydYrB6b5bwPx9QfUKHcJh7Y8CIQCfLzUBHHPUo-xd_oSMpCczFS8HZ5Mdr1YvwdVG_oagQg%3D%3D&redirect_counter=1&cm2rm=sn-h0jse7z&rrc=80&req_id=34bd5b46e4bda3ee&cms_redirect=yes&met=1743712914,&mh=7I&mip=103.25.195.69&mm=34&mn=sn-npoeens7&ms=ltu&mt=1743712500&mv=u&mvi=5&pl=24&rms=ltu,au&lsparams=met,mh,mip,mm,mn,ms,mv,mvi,pl,rms&lsig=ACuhMU0wRgIhAM3HtksP3-xcAI54Gvaf1y2Z6G_AFwRi_1ymxceUqp2SAiEA7bfoAffKxXOTejJYH26sv-bXoSLG1oruYsK37u1Ddak%3D"; } var audio = new Audio(musik); audio.loop = true; audio.autoplay = true; function mulai() { audio.play(); document.querySelector(".open").style = "opacity: 0;"; document.querySelector(".body").style = "overflow-y: scroll;"; setTimeout(function () { document.querySelector(".open").style.display = "none"; }, 1000); } </script>
 </body>
-</html>
+                        </html>
+                        
