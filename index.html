@@ -1,42 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>For Auraaaa</title>
-    <link rel="stylesheet" href="./style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For Auraaaa</title>
+  <link rel="stylesheet" href="./style.css">
+  <style>
+    /* Sembunyikan iframe */
+    #yt-audio {
+      width: 0;
+      height: 0;
+      border: 0;
+    }
+  </style>
 </head>
 <body>
-    <audio id="bg-music" src="https://youtu.be/NhYKUmiFSY0?si=kMwjHb-z4wP5WbPj" autoplay loop></audio></audio>
-    
-    <div class="container">
-        <div class="envelope-wrapper">
-            <div class="envelope">
-                <div class="letter">
-                    <div class="text">
-                        <strong>Dear Person.</strong>
-                        <p> "Aura Meyzahra Lestari, jujur aja, aku bersyukur banget pernah punya kamu di hidupku. Kita udah banyak banget ngalamin hal bareng,
-                            dari ketawa-ketawa sampai ngobrolin mimpi-mimpi kita. Tapi makin ke sini, aku ngerasa jalan kita udah mulai beda,
-                            dan aku nggak mau kita bertahan cuma karena takut buat melepaskan. Terima kasih buat semua kenangan indah yang udah kita buat.
-                            Aku harap kamu bahagia, di mana pun dan dengan siapa pun nantinya. Jaga diri baik-baik, ya."                          
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="heart"></div>
+
+  <!-- Iframe untuk audio YouTube -->
+  <iframe
+    id="yt-audio"
+    src=""
+    allow="autoplay"
+    allowfullscreen>
+  </iframe>
+
+  <div class="container">
+    <div class="envelope-wrapper">
+      <div class="envelope">
+        <div class="letter">
+          <div class="text">
+            <strong>Dear Person.</strong>
+            <p>
+              "Aura Meyzahra Lestari, jujur aja, aku bersyukur banget pernah punya kamu di hidupku. Kita udah banyak banget ngalamin hal bareng,
+              dari ketawa-ketawa sampai ngobrolin mimpi-mimpi kita. Tapi makin ke sini, aku ngerasa jalan kita udah mulai beda,
+              dan aku nggak mau kita bertahan cuma karena takut buat melepaskan. Terima kasih buat semua kenangan indah yang udah kita buat.
+              Aku harap kamu bahagia, di mana pun dan dengan siapa pun nantinya. Jaga diri baik-baik, ya."
+            </p>
+          </div>
         </div>
+      </div>
+      <div class="heart"></div>
     </div>
-    
-    <script>
-        const envelope = document.querySelector('.envelope-wrapper');
-        const music = document.getElementById('bg-music');
-        
-        envelope.addEventListener('click', () => {
-            envelope.classList.toggle('flap');
-            music.play();
-        });
-    </script>
+  </div>
+
+  <script>
+    const envelope = document.querySelector('.envelope-wrapper');
+    const ytAudio = document.getElementById('yt-audio');
+
+    envelope.addEventListener('click', () => {
+      envelope.classList.toggle('flap');
+
+      // Masukkan link embed saat diklik agar autoplay bisa jalan
+      ytAudio.src = "https://www.youtube.com/embed/NhYKUmiFSY0?autoplay=1&start=0&loop=1&playlist=NhYKUmiFSY0";
+    });
+  </script>
 </body>
-                        </html>
-                        
+</html>
